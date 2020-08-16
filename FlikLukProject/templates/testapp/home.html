@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+{% extends 'testapp/base.html' %}
+
+{% block body_block %}
+<div class="container" align="center">
+<h1>Welcome To Flik Luk Movie Store</h1><br>
+</div>
+<div >
+  {% for mov in movie %}
+  <ul>
+  <li><a href="{{mov.url}}" target="_blank"><img src="{{mov.image.url}}" style="height:250px; width:200px;" class="img-responsive" ></a></li>
+  </ul>
+  {% endfor %}
+</div>
+
+{% endblock %}

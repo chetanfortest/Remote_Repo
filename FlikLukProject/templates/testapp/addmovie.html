@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+{% extends 'testapp/base.html' %}
+
+{% block body_block %}
+<div class="container" align='center'>
+    <h1>Add Your Movie</h1>
+    <form class="" enctype="multipart/form-data" method="post">
+    {%csrf_token%}
+    {{form.as_p}}
+
+    <br><input type="submit" name="" Class='btn btn-success' value="Add Movie">
+    </form>
+    </div>
+{% endblock %}

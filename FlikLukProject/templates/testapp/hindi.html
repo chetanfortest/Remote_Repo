@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+{% extends 'testapp/base.html' %}
+
+{% block body_block %}
+<div class="container" align="center">
+<h1>Hindi Movies Store</h1>
+</div>
+<div >
+  {% for mov in movie %}
+  <ul>
+  <li><a href="{{mov.url}}" target="_blank"><img src="{{mov.image.url}}" style="height:250px; width:200px;" class="img-responsive" ></a></li>
+  </ul>
+  {% endfor %}
+</div>
+{% endblock %}

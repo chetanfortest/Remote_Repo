@@ -1,0 +1,21 @@
+body{
+	background: url(https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+	/* color: black; */
+  font-style: italic;
+}
+
+img{
+  float:left;
+	width: 70%;
+	height: 300px
+}
+
+ul{
+	list-style-type: none;
+}
+li{
+	display: inline;
+}
+a{
+	display: inline;
+}
